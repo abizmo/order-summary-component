@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const Actions = styled.div`
-align-items: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin: 24px 0;
   width: 100%;
+
+  @media (min-width: 500px) {
+    margin: 32px 0;
+  }
 `;
 
 export const BGImage = styled.div`
@@ -14,8 +18,12 @@ export const BGImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px 16px 0 0;
-  height: 180px;
+  height: 160px;
   width: 100%;
+
+  @media (min-width: 500px) {
+    height: 220px;
+  }
 `;
 
 export const Body = styled.div`
@@ -23,6 +31,10 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 24px;
+
+  @media (min-width: 500px) {
+    padding: 0 48px;
+  }
 `;
 
 export const Cancel = styled.button`
@@ -64,6 +76,10 @@ export const Container = styled.div`
   margin-bottom: 8px;
   max-width: 327px;
   width: 100%;
+
+  @media (min-width: 500px) {
+    max-width: 450px;
+  }
 `;
 
 export const Description = styled.p`
@@ -79,4 +95,8 @@ export const Title = styled.p`
   font-weight: 900;
   margin-bottom: 24px;
   margin-top: 36px;
+
+  @media (min-width: 500px) {
+    margin-top: 48px;
+  }
 `;

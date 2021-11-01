@@ -1,18 +1,9 @@
 import React from 'react';
 import OrderSummary from './components/OrderSummary';
-
-const style = {
-  alignItems: 'center',
-  backgroundColor: 'hsl(225, 100%, 94%)',
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-  justifyContent: 'center',
-  padding: '0 24px',
-};
+import { Container } from './styles';
 
 const App = () => (
-  <div style={style}>
+  <Container>
     <OrderSummary />
     <div className="attribution">
       Challenge by
@@ -24,7 +15,7 @@ const App = () => (
       <a href="https://www.abizmo.dev">ab!Zmo</a>
       .
     </div>
-  </div>
+  </Container>
 );
 
 export default App;

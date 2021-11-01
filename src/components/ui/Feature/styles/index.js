@@ -10,16 +10,26 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 16px;
   width: 100%;
+
+  @media (max-width: 320px) {
+    padding: 8px;
+  }
 `;
 
 export const Icon = styled.img`
   height: 48px;
-  margin-right: 16px;
   width: 48px;
 `;
 
 export const Info = styled.div`
   flex: 1;
+  margin-left: 16px;
+
+  @media (max-width: 320px) {
+    flex: initial;
+    font-size: .9rem;
+    margin-left: 0;
+  }
 `;
 
 export const Title = styled.p`
