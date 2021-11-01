@@ -1,31 +1,41 @@
 import React from 'react';
 
+import Card from '../ui/Card';
+import Feature from '../ui/Feature';
+
 const OrderSummary = () => (
-  <div>
-    Order Summary
+  <Card>
+    <Card.Header />
+    <Card.Body>
+      <Card.Title>Order Summary</Card.Title>
+      <Card.Description>
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </Card.Description>
 
-    You can now listen to millions of songs, audiobooks, and podcasts on any
-    device anywhere you like!
+      <Feature>
+        <Feature.Icon src="/images/icon-music.svg" />
+        <Feature.Info>
+          <Feature.Title>
+            Annual Plan
+          </Feature.Title>
+          <Feature.Text>
+            $59.99/year
+          </Feature.Text>
+        </Feature.Info>
+        <Feature.Action label="Change" />
+      </Feature>
 
-    Annual Plan
-    $59.99/year
-
-    Change
-
-    Proceed to Payment
-    Cancel Order
-
-    <div className="attribution">
-      Challenge by
-      {' '}
-      <a href="https://www.frontendmentor.io?ref=challenge" rel="noreferrer" target="_blank">Frontend Mentor</a>
-      .
-      Coded by
-      {' '}
-      <a href="https://www.abizmo.dev">ab!Zmo</a>
-      .
-    </div>
-  </div>
+      <Card.Actions>
+        <Card.Confirm>
+          Proceed to Payment
+        </Card.Confirm>
+        <Card.Cancel>
+          Cancel Order
+        </Card.Cancel>
+      </Card.Actions>
+    </Card.Body>
+  </Card>
 );
 
 export default OrderSummary;

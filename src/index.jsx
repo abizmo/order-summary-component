@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import OrderSummary from './components/OrderSummary';
+import App from './App';
 
 ReactDOM.render(
-  <OrderSummary />,
+  <App />,
   document.getElementById('root'),
 );
