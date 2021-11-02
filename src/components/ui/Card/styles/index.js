@@ -88,7 +88,7 @@ export const Description = styled.p`
   text-align: center;
 `;
 
-export const Title = styled.p`
+export const Title = styled.h1`
   font-size: 20px;
   font-weight: 900;
   margin-bottom: 24px;
