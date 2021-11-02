@@ -24,11 +24,11 @@ export default {
   },
   images: {
     hero: {
-      main: '/images/illustration-hero.svg',
+      main: './images/illustration-hero.svg',
     },
     pattern: {
-      desktop: '/images/pattern-background-desktop.svg',
-      mobile: '/images/pattern-background-mobile.svg',
+      desktop: './images/pattern-background-desktop.svg',
+      mobile: './images/pattern-background-mobile.svg',
     },
   },
 };
