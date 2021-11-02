@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/abizmo/order-summary-component.git](https://github.com/abizmo/order-summary-component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://abizmo.github.io/order-summary-component/](https://abizmo.github.io/order-summary-component/)
 
 ## My process
 
