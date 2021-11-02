@@ -7,13 +7,13 @@ export const Actions = styled.div`
   margin: 24px 0;
   width: 100%;
 
-  @media (min-width: 500px) {
+  @media (min-width: ${({ theme }) => theme.breakPoints.large}) {
     margin: 32px 0;
   }
 `;
 
 export const BGImage = styled.div`
-  background-image: url('/images/illustration-hero.svg');
+  background-image: ${({ theme }) => `url('${theme.images.hero.main}')`};
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@ export const BGImage = styled.div`
   height: 160px;
   width: 100%;
 
-  @media (min-width: 500px) {
+  @media (min-width: ${({ theme }) => theme.breakPoints.large}) {
     height: 220px;
   }
 `;
@@ -32,39 +32,37 @@ export const Body = styled.div`
   flex-direction: column;
   padding: 0 24px;
 
-  @media (min-width: 500px) {
+  @media (min-width: ${({ theme }) => theme.breakPoints.large}) {
     padding: 0 48px;
   }
 `;
 
 export const Cancel = styled.button`
   border: none;
-  color: hsl(224, 23%, 55%);
+  color: ${({ theme }) => theme.colors.neutral.desaturated};
   display: contents;
-  font-family: 'Red Hat Display';
   font-weight: 700;
 
   &:hover {
-    color: hsl(223,47%,23%);
+    color: ${({ theme }) => theme.colors.neutral.dark};
     cursor: pointer;
   }
 `;
 
 export const Confirm = styled.button`
-  background-color: hsl(245, 75%, 52%);
+  background-color: ${({ theme }) => theme.colors.primary.bright};
   border: none;
   border-radius: 12px;
-  box-shadow: 0 16px 12px hsla(245, 75%, 52%, 16%);
+  box-shadow: 0 16px 12px ${({ theme }) => theme.colors.alpha.primaryBright};
   color: white;
-  font-family: 'Red Hat Display';
   font-weight: 700;
   margin-bottom: 16px;
   padding: 16px;
   width: 100%;
   
   &:hover {
-    background-color: hsl(242,86%,72%);
-    box-shadow: 0 16px 12px hsla(242, 86%, 72%, 16%);
+    background-color: ${({ theme }) => theme.colors.secondary.bright};
+    box-shadow: 0 16px 12px ${({ theme }) => theme.colors.alpha.secondaryBright};
     cursor: pointer;
   }
 `;
@@ -72,18 +70,18 @@ export const Confirm = styled.button`
 export const Container = styled.div`
   background-color: white;
   border-radius: 16px;
-  box-shadow: 0 16px 16px hsla(245, 75%, 52%, 20%);
+  box-shadow: 0 16px 16px ${({ theme }) => theme.colors.alpha.neutralDark};
   margin-bottom: 8px;
   max-width: 327px;
   width: 100%;
 
-  @media (min-width: 500px) {
+  @media (min-width: ${({ theme }) => theme.breakPoints.large}) {
     max-width: 450px;
   }
 `;
 
 export const Description = styled.p`
-  color: hsl(224, 23%, 55%);
+  color: ${({ theme }) => theme.colors.neutral.desaturated};
   margin-bottom: 24px;
   margin-top: 0;
   max-width: 264px;
@@ -96,7 +94,7 @@ export const Title = styled.p`
   margin-bottom: 24px;
   margin-top: 36px;
 
-  @media (min-width: 500px) {
+  @media (min-width: ${({ theme }) => theme.breakPoints.large}) {
     margin-top: 48px;
   }
 `;
