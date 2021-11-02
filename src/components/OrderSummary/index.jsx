@@ -17,7 +17,7 @@ const OrderSummary = () => (
         <Feature.Icon src="./images/icon-music.svg" />
         <Feature.Info>
           <Feature.Title>
-            Annual Plan
+            Annual Plax
           </Feature.Title>
           <Feature.Text>
             $59.99/year
