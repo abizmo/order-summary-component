@@ -14,7 +14,7 @@ const OrderSummary = () => (
       </Card.Description>
 
       <Feature>
-        <Feature.Icon src="./images/icon-music.svg" />
+        <Feature.Icon src="./images/icon-music.svg" alt="Price" />
         <Feature.Info>
           <Feature.Title>
             Annual Plan

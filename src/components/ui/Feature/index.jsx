@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import {
@@ -10,8 +11,8 @@ const Feature = ({ children }) => (
 
 export default Feature;
 
-Feature.Icon = ({ src }) => (
-  <Icon src={src} />
+Feature.Icon = ({ ...restProps }) => (
+  <Icon {...restProps} />
 );
 
 Feature.Info = ({ children }) => (
